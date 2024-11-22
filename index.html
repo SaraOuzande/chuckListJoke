@@ -1,16 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/styles.css">
-  <title>Chuck Norris Jokes</title>
+  <title>Chistes de Chuck Norris</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      text-align: center; 
+      background-color: #f0f0f0;
+    }
+    button { 
+      margin: 10px; 
+      padding: 10px 20px; 
+      cursor: pointer;
+    }
+    ul { 
+      list-style-type: none; 
+      padding: 0; 
+    }
+    li { 
+      background-color: white; 
+      margin: 10px auto; 
+      padding: 15px; 
+      width: 80%; 
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+    .delete-btn { 
+      color: red; 
+      cursor: pointer; 
+      position: absolute; 
+      top: 10px; 
+      right: 15px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Chuck Norris Jokes</h1>
-  <button id="fetchJoke">Obtener Chiste</button>
-  <ul id="jokeList"></ul>
+  <h1>Chistes de Chuck Norris</h1>
+  <button id="fetchJokeBtn">Obtener Chiste</button>
+  <button id="clearAllBtn">Eliminar Todos</button>
+  <ul id="jokesList"></ul>
 
-  <script src="./js/script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
